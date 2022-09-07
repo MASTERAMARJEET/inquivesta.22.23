@@ -1,0 +1,27 @@
+{
+  "name": "inquivesta.22.23",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier -w .",
+    "lint": "eslint --ext .js,.astro,.ts,.tsx ."
+  },
+  "dependencies": {
+    "astro": "^1.1.6"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "^8.23.0",
+    "eslint-plugin-astro": "^0.18.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.5.4",
+    "typescript": "^4.8.2"
+  }
+}
