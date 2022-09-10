@@ -1,10 +1,48 @@
 ---
+import { Image } from '@astrojs/image/components'
 import Navbar from '../components/Navbar.astro'
 import Layout from '../layouts/Layout.astro'
+import logo from '../assets/inquibytes final dark bkg.png'
 ---
 
 <Layout title="Inquivesta X">
   <Navbar />
+  <section id="home" class="h-screen">
+    <Image
+      src={logo.src}
+      width={800}
+      alt="inquibytes logo"
+      aspectRatio={'auto'}
+      class="mx-auto pt-[25vh] w-[60%]"
+    />
+    <div class="flex w-full justify-center my-20 lg:my-12">
+      <button class="p-4 bg-red-brand rounded-full">Download Brochure</button>
+    </div>
+    <div class="flex-center mt-8">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/zl3BTYLlbbc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="w-screen md:w-[70vw] aspect-video"></iframe>
+    </div>
+  </section>
+  <section
+    id="about"
+    class="h-screen bg-yellow-brand flex-center text-black text-2xl"
+  >
+    About
+  </section>
+  <section id="events" class="h-screen text-center text-2xl">
+    <p class="pt-28">Events</p>
+  </section>
+  <section
+    id="team"
+    class="h-screen bg-red-brand flex-center text-black text-2xl"
+  >
+    Team
+  </section>
 </Layout>
 <style is:global>
   html {
