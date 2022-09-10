@@ -1,0 +1,12 @@
+---
+export interface Props {
+  name: string
+  desc: string
+}
+const { name, desc } = Astro.props
+---
+
+<div class="p-12 rounded-lg bg-gray-700 lg:w-[45vw] w-[60vw] m-auto">
+  <p class="font-bold text-2xl py-2">{name}</p>
+  <p class="text-ellipsis">{desc}</p>
+</div>

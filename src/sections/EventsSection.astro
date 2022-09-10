@@ -1,0 +1,35 @@
+---
+import EventCard from '../components/EventCard.astro'
+
+const eventsData = [
+  {
+    name: 'Event 1',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
+  },
+  {
+    name: 'Event 2',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
+  },
+  {
+    name: 'Event 3',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
+  },
+  {
+    name: 'Event 4',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
+  },
+  {
+    name: 'Event 5',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
+  },
+  {
+    name: 'Event 6',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
+  },
+]
+---
+
+<p class="pt-24 mb-8 text-center text-2xl">Events</p>
+<div class="grid grid-cols-1 gap-8 px-12 lg:grid-cols-2 my-8">
+  {eventsData.map((event) => <EventCard {...event} />)}
+</div>
