@@ -1,32 +1,11 @@
 ---
 import EventCard from '../components/EventCard.astro'
 
-const eventsData = [
-  {
-    name: 'Event 1',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
-  },
-  {
-    name: 'Event 2',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
-  },
-  {
-    name: 'Event 3',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
-  },
-  {
-    name: 'Event 4',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
-  },
-  {
-    name: 'Event 5',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
-  },
-  {
-    name: 'Event 6',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam tenetur autem assumenda ratione ipsa incidunt amet et placeat cupiditate numquam sequi, consequuntur tempora. Odit non sapiente neque dicta molestias, adipisci illo eaque deleniti eius ipsa iste eos distinctio cum doloribus aperiam mollitia facere reiciendis nihil voluptas vitae consequatur expedita.',
-  },
-]
+const events = await Astro.glob('../pages/event/*.md')
+const eventsData = events.map((content) => ({
+  name: content.frontmatter.title as string,
+  url: content.url as string,
+}))
 ---
 
 <p class="pt-24 mb-8 text-center text-2xl">Events</p>

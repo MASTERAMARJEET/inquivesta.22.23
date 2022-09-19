@@ -1,10 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
 import EventsSection from '../sections/EventsSection.astro'
 import HomeSection from '../sections/HomeSection.astro'
 ---
 
-<Layout title="Inquivesta X">
+<BaseLayout title="Inquivesta X">
   <section id="home" class="h-screen">
     <HomeSection />
   </section>
@@ -23,7 +23,7 @@ import HomeSection from '../sections/HomeSection.astro'
   >
     Team
   </section>
-</Layout>
+</BaseLayout>
 <style is:global>
   html {
     @apply scroll-smooth;
