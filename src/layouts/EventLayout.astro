@@ -12,6 +12,43 @@ const {
 ---
 
 <BaseLayout title={title}>
-  <h1 class="pt-[100px]">{title}</h1>
-  <slot />
+  <div class="pt-[150px] z-10"></div>
+  <header
+    class="fixed top-0 left-0 origin-top-left -rotate-[15deg] -translate-x-16 translate-y-28"
+  >
+    <div class="bg-red-brand h-10 w-[150vw]"></div>
+    <div class="bg-yellow-brand h-2 my-2 w-[150vw]"></div>
+    <div class="bg-yellow-brand mt-6 h-10 w-[150vw] px-16">
+      <h1 class="text-black font-bold text-3xl">{title.toUpperCase()}</h1>
+    </div>
+    <div class="bg-red-brand h-2 my-2 w-[150vw]"></div>
+  </header>
+  <div
+    class="fixed top-0 left-0 w-screen h-screen flex flex-col justify-between"
+  >
+    <div class="bg-red-brand h-2 mt-80 w-40 max-w-[20%]"></div>
+    <div class="bg-yellow-brand h-2 mb-24 w-96 max-w-[80%]"></div>
+  </div>
+  <div class="fixed top-0 flex h-screen left-0 pt-72 pl-10">
+    <div class="w-2 h-full mx-2 bg-red-brand"></div>
+    <div class="w-2 h-full bg-red-brand"></div>
+  </div>
+  <div
+    class="fixed top-[330px] left-[76px] h-[calc(100vh-440px)] overflow-auto p-2 md:p-6 md:text-xl"
+  >
+    <slot />
+  </div>
+  <footer
+    class="fixed bottom-0 right-0 origin-bottom-right -rotate-[15deg] translate-x-16 -translate-y-6"
+  >
+    <div class="bg-yellow-brand h-2 my-2 w-[150vw]"></div>
+    <div class="bg-red-brand h-10 w-[150vw]"></div>
+    <div class="bg-yellow-brand h-2 my-2 w-[150vw]"></div>
+    <div class="bg-red-brand h-2 my-2 w-[150vw]"></div>
+  </footer>
 </BaseLayout>
+<style is:global>
+  p {
+    @apply py-2;
+  }
+</style>
