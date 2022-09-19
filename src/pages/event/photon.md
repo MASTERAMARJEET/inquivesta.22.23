@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/EventLayout.astro
 title: Photon
+image: /photon.png
 ---
 
 HELLO PHOTOPHILES!!

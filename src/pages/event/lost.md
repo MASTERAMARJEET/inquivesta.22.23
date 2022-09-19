@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/EventLayout.astro
 title: Lost
+image: /lost.png
 ---
 
 After legendary characters like Indiana Jones, Lara Croft and Jack Sparrow graced our screens, there was an awakening of an adventurer inside us all. We’ve all been lost at least once in our lives, be it in someone’s eyes or actually losing your way. This is your chance to get LOST for a purpose.

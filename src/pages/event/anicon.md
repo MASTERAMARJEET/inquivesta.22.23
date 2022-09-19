@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/EventLayout.astro
 title: Anicon
+image: /anicon.png
 ---
 
 Calling on all otakus! Tighten your flak jackets, put on your Gi and brace yourself for an all-out war between your favourite anime!

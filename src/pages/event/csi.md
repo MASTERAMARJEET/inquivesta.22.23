@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/EventLayout.astro
 title: CSI
+image: /csi.png
 ---
 
 Whodunnit? It wasn’t us, perhaps…..it was you! There’s only one way to find out. Take control of your fates and seize the day!

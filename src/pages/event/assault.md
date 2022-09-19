@@ -1,6 +1,7 @@
 ---
 layout: ../../layouts/EventLayout.astro
 title: Assault
+image: /assault.png
 ---
 
 From Mirage to Ascent , Novigrad to Rook Islands , come on gamers!! Let's take this journey together through this fun event called ASSAULT !

@@ -1,15 +1,13 @@
 ---
-import { Image } from '@astrojs/image/components'
 import logo from '../assets/inquibytes final dark bkg.png'
 ---
 
-<Image
+<img
   src={logo.src}
   width={800}
   height={163}
   alt="inquibytes logo"
-  aspectRatio={'auto'}
-  class="mx-auto pt-[25vh] w-[60%]"
+  class="mx-auto pt-[25vh] w-[60%] aspect-auto"
 />
 <div class="flex w-full justify-center my-20 lg:my-12">
   <button class="p-4 bg-red-brand rounded-full">Download Brochure</button>

@@ -5,9 +5,10 @@ import type { MarkdownLayoutProps } from 'astro'
 
 type Props = MarkdownLayoutProps<{
   title: string
+  image: string
 }>
 const {
-  frontmatter: { title },
+  frontmatter: { title, image },
 } = Astro.props
 ---
 
@@ -32,6 +33,17 @@ const {
   <div class="fixed top-0 flex h-screen left-0 pt-72 pl-10">
     <div class="w-2 h-full mx-2 bg-red-brand"></div>
     <div class="w-2 h-full bg-red-brand"></div>
+  </div>
+  <div
+    class="fixed top-0 h-[19.5rem] flex justify-center items-end w-screen px-20"
+  >
+    <img
+      src={image}
+      height={80}
+      alt={title}
+      class="sm:h-[14vw] lg:[17vw] h-[20vw] max-h-[200px] aspect-auto"
+    />
+    <!-- class="w-1/2 max-h-[200px] aspect-auto" -->
   </div>
   <div
     class="fixed top-[330px] left-[76px] h-[calc(100vh-440px)] overflow-auto p-2 md:p-6 md:text-xl"
