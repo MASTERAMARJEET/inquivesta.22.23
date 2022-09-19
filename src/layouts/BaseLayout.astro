@@ -16,6 +16,31 @@ const { title } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <style is:global>
+      html {
+        @apply scroll-smooth;
+      }
+      body {
+        @apply bg-black text-white;
+        /* the below styling is for transparent scrollbar backround */
+        /* overflow: overlay; */
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: hsla(0, 0%, 0%, 0.4);
+        border: 1px solid white;
+        border-radius: 100vw;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: hsla(0, 0%, 0%, 0);
+        height: 50%;
+      }
+    </style>
   </head>
   <body>
     <Navbar />
