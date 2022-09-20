@@ -28,7 +28,7 @@ const {
     class="fixed top-0 left-0 w-screen h-screen flex flex-col justify-between"
   >
     <div class="bg-red-brand h-2 mt-80 w-40 max-w-[20%]"></div>
-    <div class="bg-yellow-brand h-2 mb-24 w-96 max-w-[80%]"></div>
+    <div class="bg-yellow-brand h-2 mb-10 sm:mb-24 w-96 max-w-[80%]"></div>
   </div>
   <div class="fixed top-0 flex h-screen left-0 pt-72 pl-10">
     <div class="w-2 h-full mx-2 bg-red-brand"></div>
@@ -46,12 +46,12 @@ const {
     <!-- class="w-1/2 max-h-[200px] aspect-auto" -->
   </div>
   <div
-    class="fixed top-[330px] left-[76px] h-[calc(100vh-440px)] overflow-auto p-2 md:p-6 md:text-xl"
+    class="fixed top-[330px] left-[76px] h-[calc(100vh-384px)] sm:h-[calc(100vh-440px)] overflow-auto p-2 md:p-6 md:text-xl"
   >
     <slot />
   </div>
   <footer
-    class="fixed bottom-0 right-0 origin-bottom-right -rotate-[15deg] translate-x-16 -translate-y-6"
+    class="fixed bottom-0 right-0 hidden sm:block origin-bottom-right -rotate-[15deg] translate-x-16 -translate-y-6"
   >
     <div class="bg-yellow-brand h-2 my-2 w-[150vw]"></div>
     <div class="bg-red-brand h-10 w-[150vw]"></div>
